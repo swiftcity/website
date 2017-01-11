@@ -150,6 +150,11 @@
             <div class="row">
                 <div class="row faq-style">
                     <div class="divider"></div>
+                    <h4 class="light">GitHub</h4>
+                    <h6 class="light justify-text">Look forward our organization on <a href="https://github.com/swiftcity" target="_blank">GitHub!</a></h6>
+                </div>
+                <div class="row faq-style">
+                    <div class="divider"></div>
                     <h4 class="light">How does the Extractor work?</h4>
                     <h6 class="light justify-text">We use two tools to collect and generate the data that will be visualized. The first is a custom Xcode toolchain that exports an AST representation of the project to an output file, by using the -dump-ast command of Swift's compiler. We then use another tool to parse the AST representation and allow its visualization. </h6>
                 </div>
@@ -180,7 +185,7 @@
                     <h5 class="light center">The city Topology</h5>
                     <div class="valign-wrapper row">
                         <div class="no-padding-margin col s12 m3 l3 left-align">
-                            <img class="img-container materialboxed" data-caption="City of the Animated Tab project." height="250px" width="300px" src="./imgs/animated-tab-bar.png" alt="Block dimensions.">
+                            <img class="img-container materialboxed" data-caption="City of the Animated Tab project." height="250px" width="300px" src="./imgs/animated-tab-bar.png" alt="City of the Animated Tab project.">
                         </div>
                         <div class="col s12 m9 l9 valign no-padding-margin">
                             <p style="padding-left: 55px !important" class="light justify-text">The city topology is usually mapped to elements of the system hierarchy. Since there are no packages, namespaces or anything equivalent in Swift, the mapping limits itself to two clear levels: <strong><big>the project and the files</big></strong>. The lowest layer represents the city limits as being the whole project (dark gray), and each element of the second layer represents a district, which translates to a file within the project (light gray).</p>
@@ -201,15 +206,42 @@
                             </p>
                         </div>
                         <div class="no-padding-margin col s12 m6 l6 center">
-                            <img height="270px" width="290px" style="float: left;" class="img-container materialboxed" data-caption="Color pallet." src="./imgs/stacking.png" alt="Color pallet to types.">
-                            <img height="270px" width="264px" style="margin-left: 10px !important ; float: left;" class="img-container materialboxed" data-caption="Color pallet." src="./imgs/groupping.png" alt="Color pallet to types.">
+                            <img height="270px" width="290px" style="float: left;" class="img-container materialboxed" data-caption="Stacking up blocks method.." src="./imgs/stacking.png" alt="Stacking up blocks method.">
+                            <img height="270px" width="264px" style="margin-left: 10px !important ; float: left;" class="img-container materialboxed" data-caption="Groupping by floor method." src="./imgs/groupping.png" alt="Groupping by floor method.">
                         </div>
                     </div>
                 </div>
                 <div class="row faq-style">
                     <div class="divider"></div>
-                    <h4 class="light">GitHub</h4>
-                    <h6 class="light justify-text">Look forward our organization on <a href="https://github.com/swiftcity" target="_blank">GitHub!</a></h6>
+                    <h4 class="light">Simple analysis</h4>
+                    <h6 class="light justify-text">Using our Visualizer you can quickly make analysis and conclusions about the project just spending a few minutes looking at the city. Look some analysis made bellow:</h6>
+                    <div class="valign-wrapper row">
+                        <div class="no-padding-margin col s12 m12 l9 center">
+                            <img width="100%" height="490px" class="img-container materialboxed" data-caption="Simple analysis made on project using the visualizer." src="./imgs/alamofire-analysis.png" alt="Simple analysis made on project using the visualizer.">
+                        </div>
+                        <div class="no-padding-margin col s12 m12 l3">
+                            <p class="light justify-text" style="padding-left: 15px !important"><strong>Alamofire</strong>: API for HTTP networking.</p>
+                            <ul class="browser-default" style="padding-left: 30px !important">
+                                <li class="light justify-text">Extensions as a pattern, but there are some huge classes in the city.</li>
+                                <li class="light justify-text">Two strangely large blue towers (enums). This is unusual for enums. Therefore, they could be subject to inspection.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="valign-wrapper row">
+                        <div class="no-padding-margin col s12 m12 l9 center">
+                            <img width="100%" height="490px" class="img-container materialboxed" data-caption="Simple analysis made on project using the visualizer." src="./imgs/rxswift-analysis.png" alt="Simple analysis made on project using the visualizer.">
+                        </div>
+                        <div class="no-padding-margin col s12 m12 l3">
+                            <p class="light justify-text" style="padding-left: 15px !important"><strong>RxSwift</strong>: reactive programming framework.</p>
+                            <ul class="browser-default" style="padding-left: 30px !important">
+                                <li class="light justify-text">Few extensions that extend classes;</li>
+                                <li class="light justify-text">More extensions to native Swift types, shown as ungrouped yellow blocks in the city;</li>
+                                <li class="light justify-text">53 extensions to a protocol (ObservableType);</li>
+                                <li class="light justify-text">Structs are not as often used as in Alamofire.</li>
+                            </ul>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
